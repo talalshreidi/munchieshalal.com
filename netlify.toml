@@ -1,0 +1,5 @@
+# Visitors see munchieshalal.com/ — Netlify serves src/index.html behind the scenes
+[[redirects]]
+  from = "/"
+  to = "/src/index.html"
+  status = 200

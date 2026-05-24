@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<!-- Main page — css/, js/, and assets/ live one folder up from src/ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Got munchies? Munchies Fried Chicken & Shawarma at 21 Asylum Street, Hartford, CT. In-house Munchie Sauce, halal shawarma, fried chicken, and late-night favorites.">
+    <meta name="theme-color" content="#c73142">
+    <title>Munchies Fried Chicken & Shawarma | Hartford, CT</title>
+
+    <link rel="stylesheet" href="../css/tokens-base.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Figtree:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container header-inner">
+        <a href="#home" class="logo" aria-label="Munchies Hartford — home">
+            <img src="../assets/logo.png" alt="" width="48" height="48" decoding="async">
+            <span class="logo__text">
+                <span class="logo__title">Munchies</span>
+                <span class="logo__location">Hartford</span>
+            </span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+        >
+            <span class="menu-toggle__bars" aria-hidden="true">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </span>
+        </button>
+
+        <button class="nav-backdrop" id="navBackdrop" type="button" tabindex="-1" aria-hidden="true" hidden></button>
+
+        <nav class="nav" id="navMenu" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#menu">Gallery</a>
+            <a href="#full-menu">Full Menu</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="tel:8602162950" class="order-link">Order Now</a>
+        </nav>
+    </div>
+</header>
+
+    <main>
+    <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true">
+            <video
+                class="hero-video"
+                muted
+                loop
+                playsinline
+                preload="none"
+                poster="../assets/city-bg.jpg"
+            >
+                <source src="../assets/city-bg.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="container hero-inner">
+            <div class="hero-content reveal-group">
+                <p class="tagline reveal">Got munchies? · Hartford · Opens <strong class="tagline-strong">6AM</strong></p>
+                <h1 class="hero-title">
+                    <span class="hero-title-line reveal reveal--hero-line">Munchies</span>
+                    <span class="hero-title-line hero-title-line--accent reveal reveal--hero-line"> <strong class="tagline-strong">Fried chicken &amp; shawarma</strong></span>
+                </h1>
+                <p class="hero-lede reveal">
+                    Crispy chicken, rotisserie shawarma, loaded platters — and <strong>in-house Munchie Sauce</strong> worth dipping everything in.
+                    Visit us on 21 Asylum Street, Hartford: breakfast through dinner and late-night when the city still moves.
+                </p>
+
+                <div class="hero-actions reveal">
+                    <a href="#full-menu" class="btn btn-primary">View Menu</a>
+                    <a href="tel:8602162950" class="btn btn-outline">Call to Order</a>
+                </div>
+            </div>
+
+            <div class="hero-card reveal reveal--scale">
+                <span class="hero-badge" aria-hidden="true">Halal</span>
+                <div class="hero-card-photo">
+                    <span class="hero-card-photo-shimmer" aria-hidden="true"></span>
+                    <img id="hero-storefront" src="../assets/storefront.jpg" width="680" height="314" alt="Munchies restaurant storefront at night on Asylum Street, Hartford — lit windows, signage, and fried chicken &amp; shawarma">
+                </div>
+                <div class="hero-card-body">
+                    <span class="hero-card-eyebrow">Our storefront</span>
+                    <h2>Hartford after dark</h2>
+                    <p class="hero-card-desc">
+                        The bright windows on <strong>21 Asylum Street</strong> — halal shawarma, fried chicken, and our <strong>in-house Munchie Sauce</strong>. Step up to the counter and order what you smell from the sidewalk.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-strip">
+        <div class="container info-strip-inner reveal-group">
+            <div class="reveal">
+                <strong>Open Daily</strong>
+                <span>6AM - 11PM · Fri-Sat until 1:45AM</span>
+            </div>
+            <div class="reveal">
+                <strong>Located At</strong>
+                <span>21 Asylum St, Hartford, CT 06103</span>
+            </div>
+            <div class="reveal">
+                <strong>Call</strong>
+                <span>(860) 216-2950</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section photo-showcase" id="menu">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span>Gallery</span>
+            <h2>Nothing beats our flavor.</h2>
+            <p>Spins off the spit, platters stacked heavy, chicken crunch that echoes — subs and sides too.</p>
+        </div>
+    </div>
+
+    <div class="showcase-track" aria-label="Food photo showcase">
+        <div class="showcase-row">
+            <figure class="showcase-card">
+                <img src="../assets/showcase-images/image1.jpg" alt="Fresh shawarma meat being sliced from the rotisserie" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card">
+                <img src="../assets/showcase-images/image2.jpg" alt="Box of sliced shawarma wraps with pickled vegetables and dipping sauces" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card">
+                <img src="../assets/showcase-images/image3.jpg" alt="Crispy seasoned fries in a takeout container" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card">
+                <img src="../assets/showcase-images/image4.jpg" alt="Chicken over rice platter with salad and sauce" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card">
+                <img src="../assets/showcase-images/image5.jpg" alt="Munchies storefront at night in Hartford" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card">
+                <img src="../assets/showcase-images/image6.jpg" alt="Munchies takeout bag with menu boards in the background" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card">
+                <img src="../assets/showcase-images/image7.jpg" alt="Fresh toppings and vegetables behind the counter" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card">
+                <img src="../assets/showcase-images/image8.jpg" alt="Shawarma wrap plate with fries, coleslaw, and sauce" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card" aria-hidden="true">
+                <img src="../assets/showcase-images/image1.jpg" alt="" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card" aria-hidden="true">
+                <img src="../assets/showcase-images/image2.jpg" alt="" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card" aria-hidden="true">
+                <img src="../assets/showcase-images/image3.jpg" alt="" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card" aria-hidden="true">
+                <img src="../assets/showcase-images/image4.jpg" alt="" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card" aria-hidden="true">
+                <img src="../assets/showcase-images/image5.jpg" alt="" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card" aria-hidden="true">
+                <img src="../assets/showcase-images/image6.jpg" alt="" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card" aria-hidden="true">
+                <img src="../assets/showcase-images/image7.jpg" alt="" loading="lazy">
+            </figure>
+
+            <figure class="showcase-card" aria-hidden="true">
+                <img src="../assets/showcase-images/image8.jpg" alt="" loading="lazy">
+            </figure>
+        </div>
+    </div>
+
+    <div class="container showcase-cta reveal reveal--fade">
+        <a href="#full-menu" class="btn btn-primary">See Full Menu</a>
+    </div>
+</section>
+
+<section class="section full-menu" id="full-menu">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span>Full Menu</span>
+                <h2>See everything we serve.</h2>
+                <p>Platters, wraps, sandwiches, fried chicken, wings, tenders, sides, drinks, and more.</p>
+            </div>
+
+            <div class="menu-board-grid reveal-group">
+                <button
+                    type="button"
+                    class="menu-board-card reveal reveal--scale"
+                    data-menu-lightbox-index="0"
+                    data-menu-src="../assets/menu-board-1.jpg"
+                    data-menu-title="Shawarma, Platters &amp; More"
+                    aria-haspopup="dialog"
+                >
+                    <img src="../assets/menu-board-1.jpg" alt="Munchies shawarma, sandwiches, platters, sides, desserts, and smoothie menu" loading="lazy">
+                    <div>
+                        <h3>Shawarma, Platters & More</h3>
+                        <p>Tap to enlarge</p>
+                    </div>
+                </button>
+
+                <button
+                    type="button"
+                    class="menu-board-card reveal reveal--scale"
+                    data-menu-lightbox-index="1"
+                    data-menu-src="../assets/menu-board-2.jpg"
+                    data-menu-title="Chicken, Wings &amp; Tenders"
+                    aria-haspopup="dialog"
+                >
+                    <img src="../assets/menu-board-2.jpg" alt="Munchies fried chicken, wings, tenders, sticky wings, and ordering information menu" loading="lazy">
+                    <div>
+                        <h3>Chicken, Wings &amp; Tenders</h3>
+                        <p>Tap to enlarge</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-heading light reveal">
+                <span>Customer Love</span>
+                <h2>Fresh, crispy, and worth coming back for.</h2>
+                <p>Don't take our word for it — see what our customers have to say.</p>
+            </div>
+        </div>
+
+        <div class="testimonials-track" aria-label="Scrolling customer reviews">
+            <div class="testimonials-row">
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Good food, good price!”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">C</span>
+                        <strong>— Christine</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“This spot is so good, The food tastes homemade and full of flavor, and the portions are really generous. The sauce was amazing and everything was fresh.”</p>
+                        <p class="testimonial-quote">“Super welcoming vibe too. Definitely coming back!”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">S</span>
+                        <strong>— Safiyya R.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“New spot in Hartford. Excellent service food was great.”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">N</span>
+                        <strong>— Nick P.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Great experience with a new spot in downtown Hartford! The food was well seasoned and prepared quickly even with how busy they were during lunch hours. I had the Hartford and will be back to try other menu items!”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar testimonial-avatar--compact" aria-hidden="true">Mo</span>
+                        <strong>— Montasim C.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“I went to eat shawarma then the owner was so kind he let me try the falafel on the house and it was the best experience I ever had”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">A</span>
+                        <strong>— Mohammed A.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Fresh and delicious…Great quality food and great customer service!!! Thanks guys!!”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">T</span>
+                        <strong>— Tatiana D.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Absolutely delicious with very good prices. We ordered the NY Style Chicken Over Rice and a Chicken Shawarma Gyro. Both were delicious with deep flavor. All for around 10 bucks each. This will be a regular stop for me each week.”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">B</span>
+                        <strong>— Bari</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Too good to be true… the taste 🚀”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar testimonial-avatar--compact" aria-hidden="true">Kr</span>
+                        <strong>— Kamishetty R.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Ordered fried chicken, chicken tenders, spicy wings and fries.”</p>
+                        <p class="testimonial-quote">“Everything was cooked to perfection and flavorful, with large pies of chicken!”</p>
+                        <p class="testimonial-quote">“No more Popeye's for me!😆”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar testimonial-avatar--compact" aria-hidden="true">Ky</span>
+                        <strong>— Kayleigh K.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Absolutely amazing food. The shawarmas are great whether in a wrap or over rice, gyro, delicious.”</p>
+                        <p class="testimonial-quote">“The sandwiches from Local Deli &amp; Creamer are back and well, I've eaten a few already. 😋”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">R</span>
+                        <strong>— Curtis R.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Such good food! I got the chicken shawarma along with the lamb and chicken shawarma and it was so delicious! The food was rich in flavor and the fries were seasoned perfectly! I will definitely be going back!”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">J</span>
+                        <strong>— Jennifer M.</strong>
+                    </footer>
+                </article>
+
+                <!-- copy of the row above so the photo strip loops smoothly -->
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Good food, good price!”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">C</span>
+                        <strong>— Christine</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“This spot is so good, The food tastes homemade and full of flavor, and the portions are really generous. The sauce was amazing and everything was fresh.”</p>
+                        <p class="testimonial-quote">“Super welcoming vibe too. Definitely coming back!”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">S</span>
+                        <strong>— Safiyya R.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“New spot in Hartford. Excellent service food was great.”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">N</span>
+                        <strong>— Nick P.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Great experience with a new spot in downtown Hartford! The food was well seasoned and prepared quickly even with how busy they were during lunch hours. I had the Hartford and will be back to try other menu items!”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar testimonial-avatar--compact" aria-hidden="true">Mo</span>
+                        <strong>— Montasim C.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“I went to eat shawarma then the owner was so kind he let me try the falafel on the house and it was the best experience I ever had”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">A</span>
+                        <strong>— Mohammed A.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Fresh and delicious…Great quality food and great customer service!!! Thanks guys!!”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">T</span>
+                        <strong>— Tatiana D.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Absolutely delicious with very good prices. We ordered the NY Style Chicken Over Rice and a Chicken Shawarma Gyro. Both were delicious with deep flavor. All for around 10 bucks each. This will be a regular stop for me each week.”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">B</span>
+                        <strong>— Bari</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Too good to be true… the taste 🚀”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar testimonial-avatar--compact" aria-hidden="true">Kr</span>
+                        <strong>— Kamishetty R.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Ordered fried chicken, chicken tenders, spicy wings and fries.”</p>
+                        <p class="testimonial-quote">“Everything was cooked to perfection and flavorful, with large pies of chicken!”</p>
+                        <p class="testimonial-quote">“No more Popeye's for me!😆”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar testimonial-avatar--compact" aria-hidden="true">Ky</span>
+                        <strong>— Kayleigh K.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Absolutely amazing food. The shawarmas are great whether in a wrap or over rice, gyro, delicious.”</p>
+                        <p class="testimonial-quote">“The sandwiches from Local Deli &amp; Creamer are back and well, I've eaten a few already. 😋”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">R</span>
+                        <strong>— Curtis R.</strong>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card" aria-hidden="true">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-quote">“Such good food! I got the chicken shawarma along with the lamb and chicken shawarma and it was so delicious! The food was rich in flavor and the fries were seasoned perfectly! I will definitely be going back!”</p>
+                    </div>
+                    <footer class="testimonial-meta">
+                        <span class="testimonial-avatar" aria-hidden="true">J</span>
+                        <strong>— Jennifer M.</strong>
+                    </footer>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+        <section class="section about" id="about">
+            <div class="container about-grid reveal-group">
+                <div class="reveal">
+                    <span class="section-label">About</span>
+                <h2>Made for the city.</h2>
+                <p>
+                    Munchies Fried Chicken & Shawarma brings together crispy comfort food and bold shawarma flavor
+                    in the heart of Hartford — including our <strong>in-house Munchie Sauce</strong>, made right here.
+                </p>
+                <p>
+                    Whether you are grabbing lunch, feeding the family, or stopping by late, Munchies is your easy
+                    go-to spot. <strong>Got munchies?</strong> Pull up to <strong>21 Asylum Street</strong>.
+                </p>
+            </div>
+
+            <div class="about-card reveal reveal--right">
+                <h3>Visit Munchies</h3>
+                <p><strong>Address:</strong> 21 Asylum St, Hartford, CT 06103</p>
+                <p><strong>Hours:</strong> Sun-Thu: 6AM - 11PM</p>
+                <p><strong>Late Night:</strong> Fri-Sat: 6AM - 1:45AM</p>
+                <p><strong>Phone:</strong> <a href="tel:8602162950">(860) 216-2950</a></p>
+            </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+        <div class="container contact-shell">
+            <header class="contact-intro reveal">
+                <span class="section-label">Contact</span>
+                <h2>Any questions?</h2>
+                <p>Call us, stop by, or send a message below.</p>
+            </header>
+
+            <div class="contact-layout">
+                <aside class="contact-aside reveal-group" aria-label="Restaurant contact details">
+                    <a class="contact-info-card contact-info-card--primary reveal" href="tel:8602162950">
+                        <span class="contact-info-card__icon" aria-hidden="true">&#9742;</span>
+                        <span class="contact-info-card__body">
+                            <span class="contact-info-card__label">Call to order</span>
+                            <span class="contact-info-card__value">(860) 216-2950</span>
+                        </span>
+                    </a>
+
+                    <a
+                        class="contact-info-card reveal"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=21%20Asylum%20St%2C%20Hartford%2C%20CT%2006103"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span class="contact-info-card__icon" aria-hidden="true">&#128205;</span>
+                        <span class="contact-info-card__body">
+                            <span class="contact-info-card__label">Visit us</span>
+                            <span class="contact-info-card__value">21 Asylum St, Hartford, CT</span>
+                        </span>
+                    </a>
+
+                    
+                    <div class="contact-info-card contact-info-card--static reveal">
+                        <span class="contact-info-card__icon" aria-hidden="true">&#128336;</span>
+                        <span class="contact-info-card__body">
+                            <span class="contact-info-card__label">Hours</span>
+                            <span class="contact-info-card__value">Daily 6AM&ndash;11PM</span>
+                            <span class="contact-info-card__hint">Fri&ndash;Sat until 1:45AM</span>
+                        </span>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="tel:8602162950" class="btn btn-primary">Call Now</a>
+                        <a
+                            href="https://www.google.com/maps/place/Munchies/@41.7665144,-72.6738159,21z/data=!4m15!1m8!3m7!1s0x89e6537b495fe961:0x4ff60ff15c1582b6!2s21+Asylum+St,+Hartford,+CT+06103!3b1!8m2!3d41.7664931!4d-72.6738713!16s%2Fg%2F11nnk_k5ht!3m5!1s0x89e653001310f3f9:0xeedbe9206a974cce!8m2!3d41.7664931!4d-72.6738713!16s%2Fg%2F11nhczfgt2?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline contact-btn-maps"
+                        >Open Maps</a>
+                    </div>
+                </aside>
+
+                <div class="contact-form-panel reveal reveal--left">
+                    <div class="contact-form-panel__header">
+                        <h3>Send a message</h3>
+                        <p>We typically reply within one business day.</p>
+                    </div>
+
+                    <form
+                        class="contact-form"
+                        id="contactForm"
+                        method="post"
+                        action="#contact"
+                        novalidate
+                        data-endpoint="https://api.web3forms.com/submit"
+                        data-access-key="61ed447a-f0d1-47d4-b708-7e2dcf024e00"
+                    >
+                        <div class="contact-form__honeypot" aria-hidden="true">
+                            <label for="contactCompany">Company</label>
+                            <input
+                                type="text"
+                                id="contactCompany"
+                                name="company"
+                                tabindex="-1"
+                                autocomplete="off"
+                                data-honeypot
+                            >
+                        </div>
+
+                        <div class="contact-form__field" data-field="name">
+                            <label class="contact-form__label" for="contactName">Your name</label>
+                            <input
+                                class="contact-form__input"
+                                type="text"
+                                id="contactName"
+                                name="name"
+                                autocomplete="name"
+                                required
+                                minlength="2"
+                                maxlength="80"
+                                spellcheck="false"
+                                autocapitalize="words"
+                                enterkeyhint="next"
+                            >
+                            <span class="contact-form__error" id="contactNameError" role="alert"></span>
+                        </div>
+
+                        <div class="contact-form__field" data-field="email">
+                            <label class="contact-form__label" for="contactEmail">Email</label>
+                            <input
+                                class="contact-form__input"
+                                type="email"
+                                id="contactEmail"
+                                name="email"
+                                autocomplete="email"
+                                inputmode="email"
+                                required
+                                maxlength="254"
+                                spellcheck="false"
+                                enterkeyhint="next"
+                            >
+                            <span class="contact-form__error" id="contactEmailError" role="alert"></span>
+                        </div>
+
+                        <div class="contact-form__field" data-field="message">
+                            <label class="contact-form__label" for="contactMessage">Message</label>
+                            <textarea
+                                class="contact-form__input contact-form__textarea"
+                                id="contactMessage"
+                                name="message"
+                                rows="5"
+                                required
+                                minlength="10"
+                                maxlength="2000"
+                                spellcheck="true"
+                            ></textarea>
+                            <span class="contact-form__error" id="contactMessageError" role="alert"></span>
+                        </div>
+
+                        <p class="contact-form__status" id="contactFormStatus" role="status" aria-live="polite"></p>
+
+                        <button class="contact-form__submit btn btn-primary" type="submit">
+                            <span class="contact-form__submit-text">Send Message</span>
+                            <span class="contact-form__submit-spinner" aria-hidden="true"></span>
+                        </button>
+
+                        <p class="contact-form__privacy">
+                            Your message is only used to respond to you. Never shared with third parties.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" id="site-footer">
+    <div class="container footer__inner reveal reveal--fade">
+        <div class="footer__top">
+            <a href="#home" class="footer__brand" aria-label="Munchies — back to top">
+                <img src="../assets/logo.png" alt="" width="40" height="40" decoding="async">
+                <span class="footer__brand-text">
+                    <span class="footer__brand-name">Munchies</span>
+                    <span class="footer__brand-location">Hartford</span>
+                </span>
+            </a>
+
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <a href="#menu">Gallery</a>
+                <a href="#full-menu">Menu</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="footer__social" aria-label="Social media">
+                <a
+                    class="footer__social-btn"
+                    href="https://www.instagram.com/hartfordmunchies/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-external-host="www.instagram.com"
+                    aria-label="Instagram @hartfordmunchies"
+                >
+                    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.975-.974 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.014 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.716-2.126 1.383S.935 3.35.63 4.14C.333 4.905.132 5.775.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.716 1.459 1.383 2.126.667.666 1.336 1.079 2.126 1.383.766.296 1.636.497 2.913.558C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.716 2.126-1.383.666-.667 1.079-1.335 1.383-2.126.296-.765.497-1.636.558-2.913.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.788-.716-1.459-1.383-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.498-2.913-.558C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                </a>
+                <a
+                    class="footer__social-btn"
+                    href="https://www.facebook.com/p/Munchies-Fried-Chicken-Shawarma-61578387446130/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-external-host="www.facebook.com"
+                    aria-label="Facebook"
+                >
+                    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer__meta">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=21%20Asylum%20St%2C%20Hartford%2C%20CT%2006103" target="_blank" rel="noopener noreferrer">21 Asylum St, Hartford</a>
+            <span class="footer__meta-sep" aria-hidden="true">&middot;</span>
+            <a href="tel:8602162950">(860) 216-2950</a>
+            <span class="footer__meta-sep" aria-hidden="true">&middot;</span>
+            <span>Daily 6AM&ndash;11PM</span>
+        </p>
+
+        <p class="footer__copy">&copy; <span id="footerYear">2026</span> Munchies Fried Chicken &amp; Shawarma. All rights reserved.</p>
+    </div>
+</footer>
+
+<div
+    class="menu-lightbox"
+    id="menuLightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="menuLightboxTitle"
+    hidden
+>
+    <div class="menu-lightbox__backdrop" data-menu-close tabindex="-1" aria-hidden="true"></div>
+    <div class="menu-lightbox__dialog">
+        <div class="menu-lightbox__toolbar">
+            <p class="menu-lightbox__title" id="menuLightboxTitle"></p>
+            <span class="menu-lightbox__counter" aria-hidden="true"></span>
+            <button type="button" class="menu-lightbox__close" data-menu-close aria-label="Close menu viewer">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="menu-lightbox__stage">
+            <button type="button" class="menu-lightbox__nav" data-menu-prev aria-label="Previous menu">
+                <span aria-hidden="true">&#8249;</span>
+            </button>
+            <div class="menu-lightbox__viewport">
+                <img class="menu-lightbox__img" src="" alt="">
+            </div>
+            <button type="button" class="menu-lightbox__nav" data-menu-next aria-label="Next menu">
+                <span aria-hidden="true">&#8250;</span>
+            </button>
+        </div>
+        <p class="menu-lightbox__hint">Use arrows to switch menus · Pinch to zoom · Scroll to read</p>
+    </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="module" src="../js/main.js"></script>
+</body>
+</html>

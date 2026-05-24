@@ -1,0 +1,70 @@
+/* Brand colors, spacing, and base page styles */
+:root {
+    --red: #c73142;
+    --red-deep: #a92836;
+    --yellow: #d4a853;
+    --yellow-hot: #e8bc63;
+    --ink: #0e1118;
+    --ink-soft: #1a1f2a;
+    --cream: #faf8f4;
+    --paper: #f0ebe4;
+    --white: #fefdfb;
+    --dark: #1c1917;
+    --muted: #5f5a54;
+    --border: rgba(14, 17, 24, 0.09);
+    --shadow-soft: 0 18px 46px rgba(14, 17, 24, 0.1);
+    --shadow-hover: 0 22px 55px rgba(14, 17, 24, 0.14);
+    --radius: 14px;
+    --radius-lg: 20px;
+    --container: 1180px;
+    --header-height: 5.25rem;
+    --scroll-gap: 1rem;
+    --font-display: 'Barlow Condensed', system-ui, sans-serif;
+    --font-body: 'Figtree', system-ui, sans-serif;
+    --gutter: clamp(1rem, 3vw, 2rem);
+}
+
+/* Shorthand names used across the stylesheets */
+:root {
+    --navy: var(--ink);
+    --light: var(--paper);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-height) + env(safe-area-inset-top, 0px) + var(--scroll-gap));
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--dark);
+    background-color: var(--paper);
+    background-image: linear-gradient(178deg, var(--cream) 0%, var(--paper) 48%, #e8e2da 100%);
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: min(var(--container), calc(100% - var(--gutter) * 2));
+    margin: 0 auto;
+}
