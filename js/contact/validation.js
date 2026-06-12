@@ -53,4 +53,5 @@ export function validateContactFields(fields) {
         ok: true,
         data: { name, email, message },
     };
+    console.log('Validation successful');
 }

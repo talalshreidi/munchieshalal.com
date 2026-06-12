@@ -5,4 +5,5 @@ export function initFooter() {
     if (yearEl) {
         yearEl.textContent = String(new Date().getFullYear());
     }
+    console.log('Footer initialized');
 }
