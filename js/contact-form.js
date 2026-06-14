@@ -69,6 +69,7 @@ export function initContactForm(toastEl) {
             showToast(toastEl, 'Could not send your message. Please call (860) 216-2950.');
         } finally {
             setSubmitting(form, submitBtn, false);
+            console.log('Form submission completed');
         }
     });
 
