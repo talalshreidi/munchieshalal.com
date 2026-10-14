@@ -401,11 +401,31 @@
     .showcase-cta {
         margin-top: 1.5rem;
         padding-inline: var(--gutter);
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .showcase-cta .btn {
         width: 100%;
         max-width: 22rem;
+        margin-inline: auto;
+    }
+
+    .delivery-strip__inner {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .delivery-strip__copy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .delivery-strip .btn-doordash {
+        width: 100%;
+        max-width: 22rem;
+        margin-inline: auto;
     }
 
     .testimonials {

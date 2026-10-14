@@ -24,7 +24,7 @@ python -m http.server 8000
 
 Then open **http://localhost:8000/src/index.html**
 
-The address bar will show `/src/index.html` locally. On Netlify it shows just the domain — that's normal.
+The address bar will show `/src/index.html` locally. On Netlify it shows just the domain.
 
 ## Deploy
 
@@ -35,8 +35,3 @@ Publish directory on Netlify should be the project root (`.`).
 ## Contact form
 
 The form uses [Web3Forms](https://web3forms.com). The access key is in `src/index.html` (`data-access-key`). Lock the key to your domain in the Web3Forms dashboard if the repo is public.
-
-## Notes
-
-- Menu images open in a lightbox (tap to zoom on mobile).
-- Nav scrolls smoothly and keeps the URL clean (no `#contact` in the bar).

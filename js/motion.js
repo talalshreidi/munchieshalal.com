@@ -52,6 +52,7 @@ function initRevealObserver(isTouch) {
     });
 }
 
+// Start the load sequence.
 function startLoadSequence(isTouch) {
     const staggerMs = isTouch ? 60 : 85;
     const heroDoneMs = isTouch ? 880 : 1280;

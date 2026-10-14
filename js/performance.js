@@ -63,3 +63,4 @@ function initOffscreenHeroShimmer() {
 
     observer.observe(hero);
 }
+
